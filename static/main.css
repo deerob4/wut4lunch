@@ -1,0 +1,16 @@
+.container {
+    margin: 50px auto;
+    width: 500px;
+}
+* {
+    font-family: 'Open Sans', serif;
+}
+input[type=text] {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #000;
+}
+input[type=text]:focus {
+    outline: none;
+}

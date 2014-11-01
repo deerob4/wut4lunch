@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wut 4 Lunch</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+</head>
+<body>
+<div class="container">
+    <h1>What is {{ name|title }} eating?</h1>
+
+    {% if entries %}
+        <h3>{{ name|title }} has been eating:</h3>
+        <ul>
+            {% for entry in entries %}
+                <li>{{ entry.food }}</li>
+            {% endfor %}
+        </ul>
+        {% if entries|length > 1 %}
+            <h5>That's {{ entries|length }} meals {{ name|title }} has posted - can you beat their record?</h5>
+        {% else %}
+            <h5>{{ name|title }} has only posted 1 meal - you can easily beat him, and get one step closer towards being the Wut 4 Lunch champion!</h5>
+        {% endif %}
+
+        <a href="{{ url_for('home') }}">Go back</a>
+    {% else %}
+        <h3>Looks like {{ name|title }} hasn't eaten anything - they're probably dying of starvation by now!</h3>
+        <a href="{{ url_for('home') }}">Go back</a>
+    {% endif %}
+</div>
+</body>
+</html>

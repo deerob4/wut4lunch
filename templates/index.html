@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Wut 4 Lunch</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+</head>
+<body>
+<div class="container">
+    <h1>What are people eating?</h1>
+
+    <p>Wut 4 Lunch is the latest social network where you can tell all your friends about your latest meal, fooling
+        yourself
+        into thinking they care!</p>
+
+    {% if entries %}
+        <ul>
+            {% for entry in entries %}
+                <li><strong><a href='/{{ entry.name|lower }}'>{{ entry.name|title }}</a></strong> just ate
+                    <strong>{{ entry.food }}</strong></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Looks like nobody has added their meals yet :( Why not be the first?</p>
+    {% endif %}
+
+    <h2>What are YOU eating?</h2>
+
+    <form method="POST">
+        {{ form.csrf_token }}
+        {{ form.name.label }}&nbsp;{{ form.name }}
+        <br/>
+        {{ form.food.label }}&nbsp;{{ form.food }}
+        <br/><br/>
+        {{ form.submit }}
+    </form>
+    <br/>
+    <h6>By Dee Roberts</h6>
+</div>
+</body>
+</html>
