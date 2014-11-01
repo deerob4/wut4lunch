@@ -7,3 +7,4 @@ SQLAlchemy==0.9.8
 WTForms==2.0.1
 Werkzeug==0.9.6
 itsdangerous==0.24
+psycopg2==2.5.4
