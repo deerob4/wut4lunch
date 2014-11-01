@@ -3,12 +3,10 @@ from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 from flask.ext.sqlalchemy import SQLAlchemy
-import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'supersecretstring'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 db = SQLAlchemy(app)
 
 
