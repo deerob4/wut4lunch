@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}All Lunches{{ super() }}{% endblock %}
+
+{% block content %}
+{#    <div class="jumbotron">#}
+        <h1>Salivate over all the lunches!</h1>
+        {% if lunches %}
+            <p>These are all the lunches that everyone across Wut 4 Lunch is sharing! Currently, {{ lunches|length }} lunches have been shared.</p>
+                <div class="row">
+                    {% for lunch in lunches %}
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <div class="tile">
+                                <h2 class="tile-title">{{ lunch.text|title }}</h2>
+                                <p>Shared by {{ lunch.user.name }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+        {% else %}
+            <p>Looks like no one has posted any lunch yet! Why not be the first?</p>
+        {% endif %}
+{#    </div>#}
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block title %}Sign up{{ super() }}{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>Sign up for lunch</h1>
+
+        <p>Signing up allows your friends to keep track of what you're eating, allowing you to fool yourself into they
+            actually care! What are you waiting for? Start your new, highly superficial lifestyle now!</p>
+
+        {% with messages=get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                <div class="row">
+                    <div class="col-md-12">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <p>{{ message }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <object class="burger hidden-sm hidden-xs" type="image/svg+xml" data="{{ url_for('static', filename='img/food/burger.svg') }}">
+            Your browser does not support SVG. For the good of mankind, <a href="http://www.chrome.com">upgrade</a>.
+        </object>
+
+        <form method="POST">
+            {{ form.csrf_token }}
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form.name.label }}
+                    {{ form.name(class='form-control', placeholder='John Smith') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 col-md-8">
+                    {{ form.email.label }}
+                    {{ form.email(class='form-control signup-input', placeholder='johnsmith@gmail.com', type='email') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 col-md-8">
+                    {{ form.password.label }}
+                    {{ form.password(class='form-control signup-input') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 col-md-8">
+                    {{ form.confirm.label }}
+                    {{ form.confirm(class='form-control signup-input') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form.submit(class='btn btn-info btn-lg signup-button form-control') }}
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

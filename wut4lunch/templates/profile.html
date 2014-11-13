@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {% if current_user.username == user.username %}
+        Your Profile{{ super() }}
+    {% else %}
+        {{ user.username }}'s Profile{{ super() }}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+{#    <div class="jumbotron">#}
+        {% if current_user.username == user.username %}
+            <h1>Hello, {{ current_user.name }}!</h1>
+            <hr/>
+            <p>You have been a member since {{ current_user.member_since.strftime('%d %B %Y') }}. Your lunches include:</p>
+            <ul>
+            {% for lunch in lunches %}
+                <li>{{ lunch.text }}</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <h1>{{ user.username }}'s Profile</h1>
+            <hr/>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tile">
+                        <h3 class="tile-title">Lunches</h3>
+                        <ul>
+                            {% for lunch in lunches %}
+                                <li>{{ lunch.text }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tile">
+                        <h3 class="tile-title">Name</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="tile">
+                        <h3 class="tile-title">Name</h3>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+{#    </div>#}
+{% endblock %}

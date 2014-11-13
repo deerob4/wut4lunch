@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ lunch.lunch }}{{ super() }}{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>{{ lunch.text }}</h1>
+        <p>By {{ lunch.user.name }}, added on {{ lunch.pub_date.strftime('%d %B %Y') }} at {{ lunch.pub_date.strftime('%X') }}</p>
+    </div>
+{% endblock %}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="165.09"
+   height="250.36"
+   id="svg3995"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="coffee.svg">
+  <defs
+     id="defs3997" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="301.27138"
+     inkscape:cy="184.35765"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4000">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-802.00137)">
+    <g
+       id="g4034"
+       transform="matrix(2.6011592,0,0,2.6011592,-293.2555,-457.69226)">
+      <path
+         id="path3293"
+         style="fill:#fef8e9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 135.11763,506.33968 -16.07463,0 8.05413,65.6175 32.09787,0 8.04875,-65.6175 -32.12612,0"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3295"
+         style="fill:#cb7224;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 159.6425,536.02343 c 0,9.115 -7.38613,16.50125 -16.50137,16.50125 -9.10988,0 -16.4985,-7.38625 -16.4985,-16.50125 0,-9.1075 7.38862,-16.495 16.4985,-16.495 9.11525,0 16.50137,7.3875 16.50137,16.495"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3297"
+         style="fill:#9f461e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 152.48387,532.96093 c 2.02788,6.18625 -0.37887,12.51875 -5.36662,14.34 0.1215,-0.7625 0.23337,-1.83375 0.163,-3.10875 -0.083,-2.55375 -0.86862,-5.8725 -2.53125,-9.30625 -1.65813,-3.43 -3.352,-6.48125 -4.334,-8.76125 -0.26363,-0.58 -0.48088,-1.09625 -0.65425,-1.56 5.07075,-1.41125 10.7075,2.25 12.72312,8.39625"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3299"
+         style="fill:#9f461e;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 145.4805,544.73718 c 0.52288,1.1425 0.86225,2.08125 1.08,2.74 -5.0825,1.44125 -10.74112,-2.23125 -12.76075,-8.39 -1.94962,-5.95375 0.22275,-12.01375 4.82375,-14.09 -0.0298,0.5075 -0.0425,1.0625 -0.0103,1.67375 0.0835,2.54625 0.875,5.87375 2.53375,9.305 1.65863,3.43125 3.34425,6.48 4.3335,8.76125"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3301"
+         style="fill:#d0c49f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 168.985,505.65968 c 0,0.51625 -0.42375,0.93875 -0.9375,0.93875 l -50.15687,0 c -0.52,0 -0.9375,-0.4225 -0.9375,-0.93875 0,-0.51625 0.4175,-0.9375 0.9375,-0.9375 l 50.15687,0 c 0.51375,0 0.9375,0.42125 0.9375,0.9375"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3303"
+         style="fill:#f25547;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 134.9395,502.39593 -16.07275,0 3.45163,-9.63 40.72287,0 4.02625,9.63 -32.128,0"
+         inkscape:connector-curvature="0" />
+      <use
+         id="use4022"
+         xlink:href="#path3293"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use4024"
+         xlink:href="#path3295"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use4026"
+         xlink:href="#path3297"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use4028"
+         xlink:href="#path3299"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use4030"
+         xlink:href="#path3301"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+      <use
+         id="use4032"
+         xlink:href="#path3303"
+         y="0"
+         x="0"
+         width="744.09448"
+         height="1052.3622" />
+    </g>
+  </g>
+</svg>

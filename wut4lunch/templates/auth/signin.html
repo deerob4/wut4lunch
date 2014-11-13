@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block title %}Sign in{{ super() }}{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1>Sign in for lunch</h1>
+
+        <p>Sign in to your account, and share your gastronomic adventures with the world!</p>
+
+        {% with messages=get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                <div class="row">
+                    <div class="col-md-12">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <p>{{ message }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <object class="cupcake hidden-sm hidden-xs" type="image/svg+xml" data="{{ url_for('static', filename='img/food/coffee.svg') }}">
+            Your browser does not support SVG. For the good of mankind, <a href="http://www.chrome.com">upgrade</a>.
+        </object>
+
+        <form method="POST">
+            {{ form.csrf_token }}
+            <div class="row">
+                <div class="col-md-10">
+                    {{ form.email.label }}
+                    {{ form.email(class='form-control', placeholder='johnsmith@gmail.com', type='email') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    {{ form.password.label }}
+                    {{ form.password(class='form-control', placeholder='johnsmith@gmail.com') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    {{ form.submit(class='btn btn-info btn-lg signup-button form-control') }}
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+.burger {
+    width: 250px;
+    height: 455px;
+    position: absolute;
+    right: 28px;
+    margin-top: 120px;
+}
+.cupcake {
+    width: 197px;
+    height: 275px;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+.container .jumbotron {
+    position: relative;
+}
+.signup-button {
+    margin-top: 35px;
+    border: none !important;
+    color: #fff !important;
+}
+.add-button {
+    margin-top: 25px;
+    border: none !important;
+    color: #fff !important;
+}
